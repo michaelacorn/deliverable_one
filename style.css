@@ -1,0 +1,116 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+   
+}
+
+body {
+    font-family: 'Roboto';
+    background-color: white;
+}
+
+button {
+  color: #20a8b4;
+  text-decoration: none;
+  border-radius: 25px;
+}
+
+.logo {
+    font-size: xx-large;
+    font-weight: bold;
+}
+
+header {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 30px 10%;
+    background-color:#F2F2F2;
+}
+
+.logo {
+    cursor: pointer;
+    margin-right: auto;
+}
+
+.navLinks {
+    list-style: none;
+}
+
+.navLinks li {
+    display: inline-block;
+    padding: 0px 20px;
+    font-size: large;
+    font-weight: bold;
+
+}
+
+@media screen and (min-width: 768px) {
+    ul {
+      display: flex;
+      width: auto;
+    }
+}
+
+.navLinks a {
+    text-decoration: none;
+}
+
+.navLinks a:visited {
+    color: black;
+}
+
+.navLinks li a:hover {
+    color: #ff5c0f;
+}
+
+button {
+    padding: 9px 25px;
+    background-color: #20a8b4;
+    border: none;
+    border-radius: 5000px;
+    cursor: pointer;
+    color: white;
+}
+
+button:hover {
+    background-color: #ff5c0f;
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding-top: 15%;
+}
+
+.contentTextOne {
+    display: flex;
+    color: black;
+    font-size: xx-large;
+    font-weight: bold;
+    padding: 30px;
+}
+
+.contentTextTwo {
+    color: black;
+    font-size: medium;
+    font-weight: bold;
+    padding: 30px ;
+}
+
+.contentButton {
+    padding: 25px;
+}
+
+@media screen and (max-width:768px) {  
+    .codeImage img {
+      display: none;
+    }
+}
+
+.codeImage {
+    display: flex;
+    
+}
