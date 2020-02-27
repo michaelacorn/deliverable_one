@@ -8,12 +8,14 @@
 body {
     font-family: 'Roboto';
     background-color: white;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    min-width: 920px;
 }
 
-button {
-  color: #20a8b4;
-  text-decoration: none;
-  border-radius: 25px;
+html {
+    height: 100%;
 }
 
 .logo {
@@ -23,10 +25,10 @@ button {
 
 header {
     display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    padding: 30px 10%;
+    justify-content: space-between;
+    padding: 20px;
     background-color:#F2F2F2;
+    flex-direction: column;
 }
 
 .logo {
@@ -35,26 +37,23 @@ header {
 }
 
 .navLinks {
+    display: flex;
+    flex-direction: column;
     list-style: none;
+    padding-top: 7px;
+    
 }
 
 .navLinks li {
-    display: inline-block;
-    padding: 0px 20px;
     font-size: large;
     font-weight: bold;
+    padding-bottom: 7px;
 
-}
-
-@media screen and (min-width: 768px) {
-    ul {
-      display: flex;
-      width: auto;
-    }
 }
 
 .navLinks a {
     text-decoration: none;
+    color: black;
 }
 
 .navLinks a:visited {
@@ -65,24 +64,27 @@ header {
     color: #ff5c0f;
 }
 
-button {
+.button {
     padding: 9px 25px;
     background-color: #20a8b4;
     border: none;
-    border-radius: 5000px;
+    border-radius: 10px;
     cursor: pointer;
     color: white;
+    width: 100%;
+    text-decoration: none;
 }
 
-button:hover {
+.button:hover {
     background-color: #ff5c0f;
 }
 
 .content {
     display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
-    padding-top: 15%;
+    flex-direction: column;
+    margin-left: 20px;
+    margin-right: 20px;
+    width: 100%;
 }
 
 .contentTextOne {
@@ -90,27 +92,61 @@ button:hover {
     color: black;
     font-size: xx-large;
     font-weight: bold;
-    padding: 30px;
+
 }
 
 .contentTextTwo {
     color: black;
     font-size: medium;
     font-weight: bold;
-    padding: 30px ;
-}
-
-.contentButton {
-    padding: 25px;
-}
-
-@media screen and (max-width:768px) {  
-    .codeImage img {
-      display: none;
-    }
+   
 }
 
 .codeImage {
+    display: none;
+
+}
+
+main  {
+    height: 100%;
     display: flex;
+    width: 100%;
+    align-items: center;
+}
+
+.contentGroup {
+    margin-bottom: 20px;
+}
+
+@media screen and (min-width: 768px) {
+    header {
+        display: flex;
+        justify-content: space-between;
+        padding: 20px;
+        background-color:#F2F2F2;
+        flex-direction: row;
+    }
+    .button {
+        width: auto;
+    }
+    .navLinks {
+        display: flex;
+        flex-direction: row;
+        list-style: none;
+        padding-top: 7px;
+        
+    }
+    .navLinks li {
+        margin-right: 10px;
+    
+    }
+    .learnMoreButton {
+        max-width: 135px;
+    }
+    .codeImage {
+        display: block;
+    
+    }
     
 }
+
